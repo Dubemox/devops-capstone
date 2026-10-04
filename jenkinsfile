@@ -26,5 +26,5 @@ pipeline {
                 bat 'docker build -t devops-capstone-api:jenkins .'
             }
         }
-    }
+    }     
 }
