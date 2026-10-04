@@ -22,10 +22,18 @@ tasks = [
 ]
 
 @app.get("/")
-def home():
+def root():
     return {
-        "message": "Welcome to DevOps Task Manager API",
-        "status": "running"
+        "message": "DevOps Capstone API is running",
+        "version": "1.0.0"
+    }
+
+@app.get("/info")
+def get_info():
+    return {
+        "application": "DevOps Demo API",
+        "environment": "development",
+        "version": "1.0.0"
     }
 
 
